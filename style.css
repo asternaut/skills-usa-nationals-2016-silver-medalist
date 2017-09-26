@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+@font-face{
+	font-family:open-reg;
+	src:url('fonts/opensans-regular-webfont.ttf') , url('fonts/opensans-regular-webfont.woff') , url('fonts/opensans-regular-webfont.svg') ;}
+	
+@font-face{
+	font-family:open-bold;
+	src:url('fonts/opensans-bold-webfont.ttf') , url('fonts/opensans-bold-webfont.woff') , url('fonts/opensans-bold-webfont.svg') ;}
+
+ul{margin:0; padding:0;}
+body{margin:0; padding:0; font-family:open-reg;} 
+a{color:#002664; text-decoration:none; font-family:open-reg;}
+a:hover{text-decoration:underline; color:#3FA9F5;}
+
+
+/* Header */
+header{float:left; width:100%;}
+.container{width:1300px; margin:0 auto;}
+.logo-smicons{float:left; width:100%; position:relative;}
+.logo{float:left;}
+.logo-image{float:left; background-color:#002664; padding:30px; border-radius:200px; font-size:26px; color:#fff; line-height:1;}
+.logo-image .big-logo-text{text-transform:uppercase; color:#3FA9F5; font-size:64px;}
+.logo-image .small-logo-text{float:right;}
+.tag-line{float:left; transform:translateY(-60%); position:absolute; top:50%; left:175px; font-size:64px; color:#3FA9F5; }
+.smicons{float:right; list-style:none;}
+.smicon{display:inline-block; margin-left:5px; margin-left: -4px; padding: 20px; box-sizing:border-box;}
+.smicon.facebook{background-color:#334272;}
+.smicon.twitter{background-color:#269ded;} 
+.smicon.google-plus{background-color:#f94932;padding-top:29px}
+.main-navigation-container{float:left; width:100%; text-align:center; margin:50px 0 30px;}
+.main-navigation-container ul{list-style:none;}
+.main-navigation-container li{display:inline-block; margin:0 40px;}
+.main-navigation-container a{font-size:24px;}
+
+/* End of Header */
+
+/* Footer */
+footer{float:left; width:100%; padding:40px 0;}
+.copyright{float:left; font-size:17px;}
+.footer-menu{float:right;}
+.footer-menu ul{list-style:none;}
+.footer-menu li{display:inline-block; margin:0 20px;}
+.footer-menu a{font-size:20px;}
+/* End of Footer */
+
+/* Home Page--------------------------------- */
+
+/* Three Images */
+.home-images-containter{float:left; width:100%; border-top:solid 10px #3FA9F5;}
+.home-image{display:block; float:left; width:33.33%; height:500px; background-position:center top; background-size:cover; background-repeat:no-repeat; position:relative; background-image:url(images/Student.jpg);}
+.home-image + .home-image{background-image:url(images/2016_03_Life-of-Pix-free-stock-girl-read-light-LEEROY.jpg)}
+.home-image + .home-image + .home-image{background-image:url(images/books-magazines-building-school.jpg);}
+.home-image-title{font-family:open-bold; display:none; width:100%; text-align:center; position:absolute; bottom:0; z-index:3; color:#fff;}
+.hover-color{display:none; position:absolute; width:100%; height:100%; z-index:2; background-color:rgba(0, 0, 0, .5); top:0; }
+.home-image:hover .hover-color{display:block;}
+.home-image:hover .home-image-title{display:block;}
+.home-image span{font-family:open-reg;}
+/* End of Three Images */
+
+/* Mission Statement */
+.mission-statement{float:left; width:100%; background-color:#3FA9F5; padding: 50px; box-sizing: border-box;}
+.mission-statement-icon{float:left;}
+.mission-statement-icon img{max-width:100%;}
+.mission-statement-text{float:left; font-size:26px; width:70%; color:#fff;}
+.mission-statement-title{float:left; width:100%; font-size:41px; line-height:1.3; margin-top:0px;}
+/* End of Mission Statement */
+
+/* Follow Us */
+.follow-us-section{float:left; width:100%; text-align:center;}
+.follow-us-title{font-size:64px; margin-bottom:0; color:#002664;}
+.follow-us-sub-title{font-size:29px; color:#002664; margin-top:5px}
+.hash-tag{display:inline-block; margin:0 20px;}
+.hash-tag a{color:#3FA9F5;}
+.footer-smicons{margin-top:20px;}
+.footer-smicon{display:inline-block; margin:0 15px;}
+/* End of Follow us */
+
+
+
+
+
+/* End of Home------------------------------ */
+@media (max-width: 1300px){
+	.container{width:100%; padding:0 20px; box-sizing:border-box;}
+	.mission-statement .container{padding:0;}
+	}
+	
+@media (max-width: 1024px){
+	.mission-statement-text{width:50%;}
+	}
+	
+	
+@media (max-width: 768px){
+	.main-navigation-container li{float:left; width:100%; margin:0; margin-bottom:50px; }
+	.main-navigation-container li:last-child{margin-bottom:0;}
+	.main-navigation-container{background-color:#f2f2f2; padding:20px 0; margin-bottom:0;}
+	header .container{padding:0;}
+	.logo-smicons{padding:0 20px; box-sizing:border-box;}
+	.tag-line{left:195px;}
+	.mission-statement-text{width:100%;}
+	}
+	
+@media (max-width: 768px){
+	.smicons{display:none;}
+	.home-image{width:100%;}
+	.hover-color{display:block;}
+	.home-image-title{display:block;}
+	}
+	
+@media (max-width: 483px){
+	.copyright{width:100%; text-align:center; margin-bottom:20px;}
+	.footer-menu{width:100%; text-align:center;}
+	}
+	
+@media (max-width: 425px){
+	
+	.hash-tag{float:left; width:100%; margin:0; margin-bottom:15px;}
+	.logo-image .big-logo-text{font-size:40px;}
+	.logo-image{font-size:16px;}
+	.tag-line{font-size:40px; left:160px;}
+	
+	}
+	
+@media (max-width: 320px){
+	
+	.tag-line{font-size:40px; left:155px;}
+	
+	}
+
+/* Blog--------------------------------- */
+
+.blog-left-side{
+    float:left;
+    width:55%;
+    padding-left:35px;
+}
+
+.blog-title{
+    font-size: 24pt;
+    font-family: open-bold;
+    color:#002664;
+}
+
+.blog-caption{
+    color: #269ded;
+    font-size: 14pt;
+}
+
+.blog-date{
+    font-size: 12pt;
+    color:1c1c1c;
+}
+
+.blog-left-side a{
+  float: right;
+}
+
+.blog-left-side img{
+    max-width: 100%;
+}
+
+
+.blog-right-side{
+    float: left;
+    width: 35%;
+    padding-left: 35px;
+    visibility: hidden;
+}
+
+/* since the sidebar isn't ready I've hidden it */
+
+
+
+
+/* End Blog--------------------------------- */
